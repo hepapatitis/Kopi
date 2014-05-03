@@ -421,11 +421,13 @@ section {
 .box-gray {
   background: #f5f5f5;
   padding: 40px 60px;
+  border-bottom:3px solid #d0d0d0;
 }
 
 .box-white {
   background: #ffffff;
   padding: 40px 60px;
+  border-bottom:3px solid #d0d0d0;
 }
 
 
@@ -536,28 +538,28 @@ section {
 .thumbs {
 	width: 100%;
 	float: left;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 30px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 30px;
 }
 
 .thumbs a {
-  bottom: -200px;
-  color: white;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  text-transform: uppercase;
-  top: 0;
-  z-index: 100;
+	bottom: 0;
+	color: white;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	text-transform: uppercase;
+	top: -200px;
+	z-index: 100;
 }
 
 .thumbs a span.title {
 	display: table;
 	width: 100%;
-	height: 90%;
+	height: 100%;
 }
 
 .thumbs a span.title span {
@@ -573,12 +575,21 @@ section {
 }
 
 .thumbs a:hover {
-	bottom: 0;
-  opacity: 1;
-  transition: opacity 0.30s ease-in-out 0s, bottom 0.4s cubic-bezier(0.25, 0.500, 0, 1) 0s;
-  -webkit-transition: opacity 0.30s ease-in-out 0s, bottom 0.4s cubic-bezier(0.25, 0.500, 0, 1) 0s;
+	top: 0;
+	opacity: 1;
+	transition: opacity 0.30s ease-in-out 0s, top 0.4s cubic-bezier(0.25, 0.500, 0, 1) 0s;
+	-webkit-transition: opacity 0.30s ease-in-out 0s, top 0.4s cubic-bezier(0.25, 0.500, 0, 1) 0s;
 }
 
+.thumbs:hover img {
+	transform:scale(1.15);
+	-ms-transform:scale(1.15); /* IE 9 */
+	-webkit-transform:scale(1.15); /* Opera, Chrome, and Safari */
+}
+
+.thumbs img {
+	transition: all 0.4s cubic-bezier(0.25, 0.500, 0, 1) 0s;
+}
 
 
 /*---------------Isotope Animations-------------------*/
@@ -656,6 +667,10 @@ section {
 
 
 /*---------------Latest News-------------------*/
+.news-item {
+  border-bottom:3px solid #d0d0d0;
+}
+
 .news-info {
   padding: 12px 15px;
 }
@@ -971,6 +986,112 @@ ul#tweets li {
   padding-top:30px;
   padding-bottom: 30px;
 }
+
+
+/* ==========================================================================
+   Login & Registration Form
+   ========================================================================== */ 
+
+.login-container{
+    position: relative;
+    padding: 20px 40px 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+	border-bottom: 3px solid #d0d0d0;
+	margin-top:80px;
+}
+
+#output{
+    position: absolute;
+    width: 100%;
+    top: -75px;
+    left: 0;
+    color: #fff;
+}
+
+#output.alert-success{
+    background: rgb(25, 204, 25);
+}
+
+#output.alert-danger{
+    background: rgb(228, 105, 105);
+}
+
+.login-container::before,.login-container::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+	height: 100%;
+    top: 3.5px;left: 0;
+    background: #fff;
+    z-index: -1;
+    -webkit-transform: rotateZ(4deg);
+    -moz-transform: rotateZ(4deg);
+    -ms-transform: rotateZ(4deg);
+    border: 1px solid #e0e0e0;
+	border-bottom: 3px solid #d0d0d0;
+}
+
+.login-container::after{
+    top: 5px;
+    z-index: -2;
+    -webkit-transform: rotateZ(-3deg);
+     -moz-transform: rotateZ(-3deg);
+      -ms-transform: rotateZ(-3deg);
+
+}
+
+.avatar{
+    width: 100px;height: 100px;
+    margin: 10px auto 30px;
+    border-radius: 100%;
+    border: 2px solid #aaa;
+    background-size: cover;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
   
 /* ==========================================================================
    Mobile styles

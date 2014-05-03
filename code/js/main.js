@@ -59,7 +59,7 @@ $(document).ready(function(){
 	});
 	
 	
-	//------------------------------------//
+  //------------------------------------//
   //Portfolio Filter//
   //------------------------------------//
 	$(window).load(function(){
@@ -112,11 +112,11 @@ $(document).ready(function(){
 				});
 		});
 		
-		//------------------------------------//
+	//------------------------------------//
     //Contact//
     //------------------------------------//
 
-		$(document).ready(function(){
+	$(document).ready(function(){
   
        $('#contact-form').validate({
         rules: {
@@ -143,11 +143,69 @@ $(document).ready(function(){
           .closest('.form-group').removeClass('error').addClass('success');
         }
        });
-      });
+    });
       
-      
+    //------------------------------------//
+    //Login Form//
+    //------------------------------------//
+
+	$(document).ready(function(){
   
-  	
+       $('#login-form').validate({
+        rules: {
+          user: {
+            minlength: 2,
+            required: true
+          },
+          password: {
+            minlength: 6,
+            required: true
+          }
+        },
+        highlight: function(element) {
+          $(element)
+          .closest('.control-group').removeClass('success').addClass('error');
+        },
+        success: function(element) {
+          element
+          .text('OK').addClass('valid')
+          .closest('.form-group').removeClass('error').addClass('success');
+        }
+       });
+    });  
+  
+  	//------------------------------------//
+    //Register Form//
+    //------------------------------------//
+
+	$(document).ready(function(){
+  
+       $('#register-form').validate({
+        rules: {
+          user: {
+            minlength: 2,
+            required: true
+          },
+          password: {
+            minlength: 6,
+            required: true
+          },
+		  email: {
+            required: true,
+            email: true
+          },
+        },
+        highlight: function(element) {
+          $(element)
+          .closest('.control-group').removeClass('success').addClass('error');
+        },
+        success: function(element) {
+          element
+          .text('OK').addClass('valid')
+          .closest('.form-group').removeClass('error').addClass('success');
+        }
+       });
+    });  
 	
 });
 

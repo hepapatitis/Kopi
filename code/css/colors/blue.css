@@ -60,21 +60,17 @@
 
 
 /* --------------- Latest News ----------------- */
-.news-item {
-  background: #0bb1d8;
-}
-
-.news-item:hover {
-  background: #0f98b6;
+.news-item:hover .news-info {
+  border-top:3px solid #0bb1d8;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
 
-/* --------------- Pricing Tables ----------------- */
-.pricing-table.active .headline {
-  background: #0bb1d8;
+/* --------------- Contact Us ----------------- */
+.info-item .fa {
+  color: #0bb1d8;
 }
 
 /* --------------- Social Icons ----------------- */

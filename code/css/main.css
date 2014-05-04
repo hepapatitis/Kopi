@@ -72,6 +72,10 @@ p {
   font-weight: 400;
 }
 
+.bold {
+  font-weight:bold;
+}
+
 .lead {
   font-size: 17px;
   line-height: 22px;
@@ -669,101 +673,122 @@ section {
 /*---------------Latest News-------------------*/
 .news-item {
   border-bottom:3px solid #d0d0d0;
+  background:#f5f5f5;
 }
 
 .news-info {
   padding: 12px 15px;
+  border-top:3px solid transparent;
 }
 
+.news-item:hover .news-img img {
+	transform:scale(1.1);
+	-ms-transform:scale(1.1); /* IE 9 */
+	-webkit-transform:scale(1.1); /* Opera, Chrome, and Safari */
+}
 
+.news-img {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.news-img img {
+	transition: all 0.4s cubic-bezier(0.25, 0.500, 0, 1) 0s;
+}
 
 /*---------------Pricing Tables-------------------*/
-.pricing-container {
-  padding-left: 0px;
-  padding-right: 0px;
+#pricing .plan {
+  background: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-bottom:3px solid #d0d0d0;
+  margin-bottom:10px;
 }
-
-.pricing-table {
-  background: #FFFFFF;
-  margin-bottom: 50px;
-  margin-top: 0px;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+#pricing .plan .plan-title {
+  margin: 0;
+  border-radius: 7px 7px 0 0;
+  overflow: hidden;
+  text-align: center;
+  background: #f5f5f5;
 }
-.pricing-table.active {
-  box-shadow: 0px 0px 12px rgba(41,46,50,0.6); 
-  position: absolute;
-  margin: 0 auto auto;
-  z-index: 200;
-}
-
-.pricing-table:hover {
-  margin-top: -10px;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-
-.pricing-table li {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.headline {
-  background: #1e2633;
-  color: #FFFFFF;
-  padding: 10px;
-}
-
-.price {
-    background: none repeat scroll 0 0 #2e3b4e;
-    color: #FFFFFF;
-    font-size: 32px;
-    font-weight: bold;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-
-.pricing-table:hover li.price  {
-  background: #39485e;
-  -webkit-transition: all 0.85s ease-in-out;
-  -moz-transition: all 0.85s ease-in-out;
-  -o-transition: all 0.85s ease-in-out;
-  transition: all 0.85s ease-in-out;
-}
-
-.price small {
+#pricing .plan .plan-title h2 {
+  padding: 1.3em 0.5em 0;
+  margin: 0;
+  font-size: 1.3em;
   font-weight: 300;
-  color: #a1abb5;
+  text-align: center;
+  color: #7c7c7c;
 }
-
-.info {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-weight: 300;
-  font-size: 13px;
-  color: #919da8;
+#pricing .plan .plan-title h3 {
+  font-weight: 200;
+  font-size: 4em;
+  line-height: 1.5em;
+  margin-top: 0;
+  color: #333333;
 }
-
-.features {
-  color: #1E2633;
-  font-weight: bold;
-  padding-top: 12px;
-  padding-bottom: 15px;
-  border-bottom: 1px dotted #E8EAEA;
+#pricing .plan .plan-title p {
+  font-size: 1.1em;
+  font-weight: 200;
 }
-
-.features.first {
-  border-top: 1px dotted #E8EAEA;
+#pricing .plan .plan-title div {
+  padding: 2.2em 1em 0;
+  text-align: right;
 }
-
-.features.last {
-  padding-top: 17px;
-  padding-bottom: 20px;
+#pricing .plan .plan-title input {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#pricing .plan .plan-title sup {
+  top: -1.5em;
+  font-size: 0.3em;
+  padding-left: 0.2em;
+}
+#pricing .plan .plan-title sub {
+  bottom: -0.1em;
+  font-size: 0.2em;
+}
+#pricing .plan .plan-features {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#pricing .plan .plan-features li {
+  padding: 1.3em 0;
+  font-size: 1em;
+  font-weight: 200;
+  border-bottom: 1px solid #eaeaea;
+}
+#pricing .plan .plan-features li.not-included {
+  color:#bbb;
+  font-style:italic;
+}
+#pricing .plan .plan-cta {
+  display: block;
+  margin: 0;
+  text-align: center;
+  border-radius: 0 0 7px 7px;
+  overflow: hidden;
+}
+#pricing .plan .plan-cta .plan-buy {
+  margin: 2em 0;
+}
+#pricing .plan .plan-cta .plan-buy .btn {
+  padding: 10px 30px;
+  margin-bottom:0;
+}
+#pricing .plan.featured {
+  padding: 1.5em 0 0;
+  margin-top: -1.5em;
+}
+#pricing .plan.featured .plan-title {
+  margin: -1.5em 0 0;
+  padding-top: 1.5em;
 }
 
 
@@ -771,6 +796,32 @@ section {
 .clients img {
     padding-bottom: 20px;
     margin: 0 auto;
+}
+
+/*---------------Contact Us------------------*/
+.info-item {
+	text-align:center;
+}
+.info-item .fa {
+	font-size:40px;
+	margin-bottom:10px;
+	display:block;
+}
+
+/* ==========================================================================
+   Blog Detail styles
+   ========================================================================== */
+
+.meta-list {
+  margin: 0;
+  padding: 10px 15px 15px 0;
+  display: block;
+  list-style: none;
+}
+
+.meta-list li {
+  display: inline-block;
+  color: #a1a1a1;
 }
 
 /* ==========================================================================
@@ -845,47 +896,18 @@ section {
 }
 
 /* ==========================================================================
-   Twitter feed styles
+   Testimony styles
    ========================================================================== */ 
-ul#tweets {
-    color: #FFFFFF;
-    font-weight: bold;
-    list-style: none outside none;
-    padding-left: 0px;
-    font-size: 16px;
-    text-align: center;
+.testimonial-text {
+  margin: 20px auto;
+  font-size: 14px;
+  line-height: 24px;
 }
-
-ul#tweets li {
-    border-bottom: 1px solid rgba(255,255,255,0.3);
-    margin-bottom: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.user img {
-    border-radius: 30px;
-    margin-right: 12px;
-}
-
-.tweet {
-  color: #ffffff;
-}
-
-.tweet > a {
-    border-bottom: 1px dotted #FFFFFF;
-}
-
-.timePosted {
-    color: #FFFFFF;
-    font-size: 11px;
-    opacity: 0.6;
-}
-
-.interact a {
-    padding-right: 16px;
-    font-weight: bold;
-    color: #ffffff;
+   
+.testimonial-author {
+  display: block;
+  text-align: center;
+  font-style: italic;
 }
 
 
@@ -1002,22 +1024,6 @@ ul#tweets li {
 	margin-top:80px;
 }
 
-#output{
-    position: absolute;
-    width: 100%;
-    top: -75px;
-    left: 0;
-    color: #fff;
-}
-
-#output.alert-success{
-    background: rgb(25, 204, 25);
-}
-
-#output.alert-danger{
-    background: rgb(228, 105, 105);
-}
-
 .login-container::before,.login-container::after{
     content: "";
     position: absolute;
@@ -1040,21 +1046,6 @@ ul#tweets li {
      -moz-transform: rotateZ(-3deg);
       -ms-transform: rotateZ(-3deg);
 
-}
-
-.avatar{
-    width: 100px;height: 100px;
-    margin: 10px auto 30px;
-    border-radius: 100%;
-    border: 2px solid #aaa;
-    background-size: cover;
-}
-
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
 }
 
 @-webkit-keyframes fadeInUp {
@@ -1104,19 +1095,6 @@ ul#tweets li {
   padding-right: 15px;
 }
 
-.pricing-container {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.pricing-table.active {
-  position: relative;
-}
-
-.pricing-table:hover {
-  margin-top: 0px;
-}
-
 .sy-caption-wrap {
     bottom: 30%;
     width: 70%;
@@ -1127,6 +1105,15 @@ ul#tweets li {
   font-size: 33px;
   line-height: 35px;
   letter-spacing: -1px;
+}
+
+#pricing .plan.featured {
+  padding:0;
+  margin-top:0;
+}
+#pricing .plan.featured .plan-title {
+  padding:0;
+  margin-top:0;
 }
 
 #header {
@@ -1147,19 +1134,6 @@ ul#tweets li {
   padding-right: 15px;
 }
 
-.pricing-container {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.pricing-table.active {
-  position: relative;
-}
-
-.pricing-table:hover {
-  margin-top: 0px;
-}
-
 .sy-caption-wrap {
     bottom: 30%;
     width: 50%;
@@ -1170,6 +1144,15 @@ ul#tweets li {
   font-size: 40px;
   line-height: 44px;
   letter-spacing: -2px;
+}
+
+#pricing .plan.featured {
+  padding:0;
+  margin-top:0;
+}
+#pricing .plan.featured .plan-title {
+  padding:0;
+  margin-top:0;
 }
 
 #header {
@@ -1191,20 +1174,20 @@ ul#tweets li {
   padding-right: 15px;
 }
 
-.pricing-table.active {
-  position: relative;
-}
-
-.pricing-table:hover {
-  margin-top: 0px;
-}
-
 .sy-caption-wrap {
     bottom: 30%;
     width: 40%;
     padding-left: 6%;
 }
 
+#pricing .plan.featured {
+  padding:0;
+  margin-top:0;
+}
+#pricing .plan.featured .plan-title {
+  padding:0;
+  margin-top:0;
+}
 	
 }
 

@@ -28,6 +28,12 @@
 
 }
 
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #84cac1;
+    border-color: #84cac1;
+}
+
+
 /* --------------- Buttons ----------------- */
 
 .btn-secondary {

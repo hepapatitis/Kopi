@@ -260,7 +260,8 @@ a:hover {
    ========================================================================== */
 .navbar {
     border: 0px solid rgba(0, 0, 0, 0);
-    background: #ededed;
+	border-bottom: 3px solid #d0d0d0;
+    background: #f2f2f2;
     margin: auto;
     max-width: 1170px;
     min-height: 60px;
@@ -278,7 +279,6 @@ a:hover {
     color: #2e3b4e;
     text-transform: uppercase;
     font-size: 12px;
-    border-bottom: 1px solid #ededed;
     padding-bottom: 5px;
     
 }
@@ -286,7 +286,9 @@ a:hover {
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
     background-color: rgba(0, 0, 0, 0);
     color: #2e3b4e;
-    border-bottom: 1px solid #2e3b4e;
+    border-bottom: 2px solid #2e3b4e;
+	padding-bottom:20px;
+	margin-bottom:-2px;
 }
 
 .navbar-inverse .navbar-nav > li > a::after {
@@ -316,7 +318,7 @@ a:hover {
 }
 
 .navbar-nav > li > a {
-    padding: 15px 0px 0px;
+    padding: 18px 6px 0px;
     margin-right:10px;
     margin-left: 10px;
 }
@@ -325,6 +327,8 @@ a:hover {
     background-color: rgba(0, 0, 0, 0);
     color: #2e3b4e;
     border-bottom: 2px solid #2e3b4e;
+	padding-bottom:20px;
+	margin-bottom:-2px;
 }
 
 .navbar-inverse .navbar-nav > .active > a:hover::after,
@@ -364,7 +368,7 @@ a:hover {
 .navbar-nav > li > .dropdown-menu {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    margin-top: 18px;
+    margin-top: 3px;
 }
 
 .dropdown-menu > li > a {

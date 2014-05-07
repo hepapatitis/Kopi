@@ -18,8 +18,17 @@ body {
 
 .wrapper {
   width: 100%;
-  max-width: 1170px;
   margin: 0 auto;
+}
+
+.wrapper.boxed,
+.wrapper.boxed .navbar,
+.slider-wrapper {
+  max-width: 1200px;
+}
+
+.slider-wrapper {
+  margin:auto;
 }
 
 .container {
@@ -263,7 +272,6 @@ a:hover {
 	border-bottom: 3px solid #d0d0d0;
     background: #f2f2f2;
     margin: auto;
-    max-width: 1170px;
     min-height: 60px;
     position: fixed;
     

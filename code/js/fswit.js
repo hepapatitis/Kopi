@@ -8,6 +8,14 @@
 		});
 		var c = readCookie('style');
 		if (c) switchStylestyle(c);
+		
+		$('#layout_select').on('change', function()
+		{
+			runSwitchLayout()
+			return false;
+		});
+		var c = readCookie('layout');
+		if (c) switchLayout(c);
 	});
 
 	function switchStylestyle(styleName)
@@ -18,6 +26,19 @@
 			if (this.getAttribute('title') == styleName) this.disabled = false;
 		});
 		createCookie('style', styleName, 365);
+	}
+	
+	function runSwitchLayout()
+	{
+		switchLayout($("#layout_select").val());
+	}
+	
+	function switchLayout(layoutName)
+	{
+		$('.wrapper').removeClass('boxed');
+		$('.wrapper').removeClass('wide');
+		$('.wrapper').addClass(layoutName);
+		createCookie('layout', layoutName, 365);
 	}
 })(jQuery);
 

@@ -5,15 +5,24 @@ $(document).ready(function(){
   //------------------------------------//
     	var menu = $('.navbar');
     	$(window).bind('scroll', function(e){
-    		if($(window).scrollTop() > 80){
-    			if(!menu.hasClass('open')){
-    				menu.addClass('open');
-    			}
-    		}else{
-    			if(menu.hasClass('open')){
-    				menu.removeClass('open');
-    			}
-    		}
+			if($(window).width() >= 768)
+			{
+				if($(window).scrollTop() > 80){
+					if(!menu.hasClass('open')){
+						menu.addClass('open');
+					}
+				}else{
+					if(menu.hasClass('open')){
+						menu.removeClass('open');
+					}
+				}
+			}
+			else
+			{
+				if(menu.hasClass('open')){
+					menu.removeClass('open');
+				}
+			}
     	});
     
   

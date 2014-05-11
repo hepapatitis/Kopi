@@ -274,13 +274,12 @@ a:hover {
     margin: auto;
     min-height: 60px;
     position: fixed;
-    
-    top: -60px;
+    top: 0px;
     transition: top 0.4s ease 0s;
 }
 
 .navbar.open {
-    top: 0;
+    top: -60px;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -1026,6 +1025,11 @@ section {
    Login & Registration Form
    ========================================================================== */ 
 
+.member-area-logo {
+	margin-top:60px;
+	text-align:center;
+}
+   
 .login-container{
     position: relative;
     padding: 20px 40px 40px;
@@ -1033,7 +1037,7 @@ section {
     background: #fff;
     border: 1px solid #e0e0e0;
 	border-bottom: 3px solid #d0d0d0;
-	margin-top:80px;
+	margin-top:30px;
 }
 
 .login-container::before,.login-container::after{

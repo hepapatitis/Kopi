@@ -1,31 +1,21 @@
+function EasyTextParallax() {
+    scrollPos = $(this).scrollTop();
+    $('.slide-container').css({
+        'margin-top': (scrollPos / 3) + "px",
+        'opacity': 1 - (scrollPos / 250)
+    });
+}
+
 $(document).ready(function(){  
   
   //------------------------------------//
-  //Navbar//
+  //Slider + Parallax//
   //------------------------------------//
-    	var menu = $('.navbar');
-    	$(window).bind('scroll', function(e){
-			if($(window).width() >= 768)
-			{
-				if($(window).scrollTop() > 80){
-					if(!menu.hasClass('open')){
-						menu.addClass('open');
-					}
-				}else{
-					if(menu.hasClass('open')){
-						menu.removeClass('open');
-					}
-				}
-			}
-			else
-			{
-				if(menu.hasClass('open')){
-					menu.removeClass('open');
-				}
-			}
-    	});
-    
+  $(window).scroll(function () {
+        EasyTextParallax();
+  });
   
+
   //------------------------------------//
   //Scroll To//
   //------------------------------------//

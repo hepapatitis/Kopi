@@ -53,7 +53,7 @@
 
 <body id="top" data-spy="scroll" data-target=".navbar" data-offset="30">
   
-  <div class="wrapper wide">
+  <div class="wrapper boxed">
     
     
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -93,40 +93,18 @@
     
     <!--Header-->
     <section id="header" class="color-bg">
-	  
+      
       <!--Header Slides. Add you caption in the image alt text. See below for examples-->
-	  <div id="slides">
-		  <ul class="slides-container">
+	  <div class="slider-wrapper">
+		  <ul id="slippry-header" class="animated fadeIn list-unstyled">
 			<li>
-			  <img src="img/sliders/building.jpg" alt="">
-			  <div class="container slide-container text-center">
-				<h2>Welcome to</h2>
-				<h1>KOOPI</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			  </div>
+			  <a href="#"><img src="img/header1.png" alt="Say Hello To Koopi"></a>
 			</li>
 			<li>
-			  <img src="img/sliders/dog.jpg" alt="">
-			  <div class="container slide-container">
-				<h2>Flat Design</h2>
-				<h1>Choose Your Color</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />sed do eiusmod tempor incididunt ut labore<br />et dolore magna aliqua.</p>
-			  </div>
-			</li>
-			<li>
-			  <img src="img/sliders/girl.jpg" alt="">
-			  <div class="container slide-container">
-				<h2>Build with</h2>
-				<h1>Bootstrap 3</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			  </div>
+			  <a href="#"><img src="img/header2.png" alt="Built With Bootstrap"></a>
 			</li>
 		  </ul>
-		  <nav class="slides-navigation">
-			<a href="#" class="next"><i class="fa fa-chevron-right"></i></a>
-			<a href="#" class="prev"><i class="fa fa-chevron-left"></i></a>
-		  </nav>
-	  </div>
+      </div>
       
       <div class="container">
         
@@ -756,19 +734,18 @@
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.superslides.min.js"></script>
     <script src="js/slippry.min.js"></script>
     <script src="js/fswit.js"></script>
     <script src="js/main.js"></script>
     
     <script>
     jQuery(document).ready(function(){
-      jQuery('#slides').superslides({
-		animation: 'fade',
-		play: 7500,
-		inherit_height_from: $("#header"),
-		inherit_width_from: $(".wrapper")
-	  });
+      jQuery('#slippry-header').slippry({
+        transition: 'fade',
+        controls: false,
+        pause: 4000,
+        auto: true
+      });
     });   
     </script>
     

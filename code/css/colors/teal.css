@@ -63,6 +63,10 @@
     color: #FFFFFF;
 }
 
+/* --------------- Pricing ----------------- */
+#pricing span.featured {
+  background:#74c7d5;
+}
 
 /* --------------- Latest News ----------------- */
 .news-item:hover .news-info {

@@ -73,6 +73,11 @@
   transition: all 0.35s ease-in-out;
 }
 
+/* --------------- Pricing ----------------- */
+#pricing span.featured {
+  background:#0bb1d8;
+}
+
 /* --------------- Contact Us ----------------- */
 .info-item .fa {
   color: #0bb1d8;

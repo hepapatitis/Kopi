@@ -716,9 +716,6 @@ section {
   text-decoration: none;
 }
 
-.option-set {
-    margin-left: 15px;
-}
 
 
 /*---------------About-------------------*/
@@ -1015,7 +1012,7 @@ section {
     border: 0px solid transparent;
     border-radius: 2px;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) inset;
-    color: #242936;
+    color: #87898f;
     display: block;
     font-size: 14px;
     height: 55px;
@@ -1033,7 +1030,7 @@ section {
 } 
 
 .form-control:focus {
-    background-color: #f2f1f1;
+    background-color: #3d4350;
     border-color: transparent;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.0);
     outline: 0 none;

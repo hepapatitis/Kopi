@@ -1,0 +1,318 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>KOOPI Responsive Business & Portfolio Template Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+	
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+	
+	<!-- Syntax Highlighter -->
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;KOOPI Responsive Business & Portfolio Template&rdquo; Documentation v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;KOOPI Responsive Business & Portfolio Template&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 5/10/2014<br>
+					By: HepapatitiS<br>
+					Email: <a href="mailto:support@memoriesdust.com">support@memoriesdust.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/hepapatitis">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#introduction">Introduction</a></li>
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScripts</a></li>
+			<li><a href="#fontssused">Fonts used</a></li>
+			<li><a href="#faqs">FAQs</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="introduction"><strong>A) Introduction</strong> - <a href="#toc">top</a></h3>
+		
+		<p>
+			Thank you so much for purchasing <strong>KOOPI Responsive Business & Portfolio Template</strong>.
+			Please feel free to contact us if you have question or problem about this template.
+			We will do our best to provide you with the best possible assistance.
+		</p>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>B) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		
+		<h4>HTML Files</h4>
+		<ul>
+			<li><em>index.html</em> - Home Page</li>
+			<li><em>blog-detail.html</em> - Single Post Page</li>
+			<li><em>individual-work.html</em> - Porfolio Single Project with details</li>
+			<li><em>login.html</em> - Login Us Page</li>
+			<li><em>register.html</em> - Register Page (you can see different layouts)</li>
+		</ul>
+		
+		<h4>General HTML structure</h4>
+		<p>This template is available in wide and fixed layout. Each information is nested within a <strong>section</strong> with unqiue id. The general template structure is the same throughout the template. Here is the general structure.</p>
+		
+		
+<pre class="brush: html">
+<!-- Primary Page Layout
+================================================== -->
+
+<!-- BEGIN WRAPPER -->
+<div id="wrapper wide">
+	
+	<!-- BEGIN HEADER -->
+	<section id="header" class="color-bg">
+	
+	</section>
+	<!-- END HEADER -->
+
+	
+	<!-- BEGIN SERVICES -->
+	<section id="services" class="white-bg">
+	
+	</section>
+	<!-- END SERVICES -->
+
+	<!-- BEGIN SERVICES -->
+	<section id="message-box">
+	
+	</section>
+	<!-- END SERVICES -->
+	
+	...
+	
+	
+	<!-- BEGIN FOOTER -->
+	<section id="footer">
+	
+	</section>
+	<!-- END FOOTER -->
+	
+</div>
+<!-- END WRAPPER -->
+</pre>
+
+		<h5>Changing to Boxed Layout</h5>
+		<p>To use boxed layout, change the <u>wide</u> to <u>boxed</u> in wrapper div to change to boxed layout. </p>
+		
+		<p><u>Boxed Layout</u></p>
+<pre class="brush: html">
+<div id="wrapper boxed">
+...
+</div>
+</pre>
+
+		<p><u>Wide Layout</u></p>
+<pre class="brush: html">
+<div id="wrapper wide">
+...
+</div>
+</pre>
+		
+		<hr>
+
+		<h3 id="cssFiles"><strong>C) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+		
+		<h4>Styles</h4>
+		
+<pre class="brush: html">
+<!-- CSS
+================================================== -->
+
+<!-- FontAwesome -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<!-- Animate.css -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- Superslides -->
+<link rel="stylesheet" href="css/superslides.css">
+
+<!-- Google Font -->
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,100italic,300italic,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Default Bootstrap 3 -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Base Template Styles -->
+<link rel="stylesheet" href="css/main.css">
+<!-- Color preference -->
+<link rel="stylesheet" href="css/colors/green.css"><!--Replace Your Color-->
+<!-- Your Custom Styles -->
+<link rel="stylesheet" href="css/custom-styles.css">
+</pre>
+
+		<p>I'm using 9 CSS files in this theme. I've separated styles for improving convenience to edit this template. If you're going to use this template in production I'd recommend you merge all stylesheets in one file (for decreasing http queries).</p>
+
+		<p>Lets take a look closely at our stylesheet files.</p>
+		
+		<h5>font-awesome.min.css</h5>
+		<p>Base styles for FontAwesome icon fonts.</p>
+		
+		<h5>animate.css</h5>
+		<p>Animate.css main file to perform animation using CSS3.</p>
+		
+		<h5>superslides.css</h5>
+		<p>Styles for Superslides Slider.</p>
+		
+		<h5>bootstrap.min.css</h5>
+		<p>The default Bootstrap 3 styles.</p>
+		
+		<h5>main.css</h5>
+		<p>Common css styles for this template.</p>
+		
+		<h5>colors/green.css</h5>
+		<p>Stylesheet that applies selected color. Please include one of the provided colors.</p>
+		
+		<h5>custom-styles.css</h5>
+		<p>Please put all your custom changes to this file. <strong>This CSS has to be loaded last to override perfectly.</strong></p>
+		
+		<hr>
+		
+		<h3 id="javascript"><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports 11 Javascript files.</p>
+		
+<pre class="brush: html">
+<!-- Javascript Files
+================================================== -->
+<!-- initialize jQuery Library -->
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<script src="js/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+<!-- Default Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+<!-- WOW.js -->
+<script src="js/wow.min.js"></script>
+<!-- Isotope -->
+<script src="js/jquery.isotope.min.js"></script>
+<!-- jQuery Validate -->
+<script src="js/jquery.validate.min.js"></script>
+<!-- Superslides -->
+<script src="js/jquery.superslides.min.js"></script>
+<!-- jQuery Knob -->
+<script src="js/jquery.knob.js"></script>
+<!-- Color Switcher JS -->
+<script src="js/color_switcher.js"></script>
+<!-- Koopi Main JS -->
+<script src="js/main.js"></script>
+
+<!-- Custom -->
+<script src="js/custom.js"></script>
+</pre>
+
+		<p>Lets take a look closely at our javascript files.</p>
+		
+		<h5>jquery-1.11.0.min.js</h5>
+		<p><a href="http://jquery.com/">jQuery</a> is a multi-browser JavaScript library designed to simplify the client-side scripting of HTML.</p>
+		
+		<h5>bootstrap.min.js</h5>
+		<p>Default Bootstrap JS plugins.</p>
+		
+		<h5>wow.min.js</h5>
+		<p>A JS plugin that reveal animations when you scroll. <a href="http://mynameismatthieu.com/WOW/">Visit Website</a></p>
+		
+		<h5>jquery.isotope.min.js</h5>
+		<p>Plugin for Portfolio filterable layout. <a href="http://isotope.metafizzy.co/">Visit Website</a></p>
+		
+		<h5>jquery.validate.min.js</h5>
+		<p>Form validation plugin. <a href="http://jqueryvalidation.org/">Visit Website</a></p>
+		
+		<h5>jquery.superslides.min.js</h5>
+		<p>A fullscreen slider for jQuery. <a href="http://nicinabox.com/superslides/">Visit Website</a></p>
+		
+		<h5>jquery.knob.js</h5>
+		<p>jQuery plugin to create doughnut graph. <a href="http://anthonyterrien.com/knob/">Visit Website</a></p>
+		
+		<h5>color_switcher.js</h5>
+		<p>Color switcher</p>
+		
+		<h5>main.js</h5>
+		<p>We put initialisation of many plugins here.</p>
+		
+		<h5>custom.js</h5>
+		<p>Your custom JavaScript here.</p>
+		
+		<hr>
+		
+		<h3 id="fontssused"><strong>E) Fonts Used</strong> - <a href="#toc">top</a></h3>
+		<p>This template uses only one type of fonts.</p>
+		
+		<ol>
+			<li><em><a href="http://www.google.com/fonts/specimen/Roboto">Roboto</a></em> - Google Web Font</li>
+		</ol>
+		
+		
+		<hr>
+		
+		<h3 id="faqs"><strong>F) FAQs</strong> - <a href="#toc">top</a></h3>
+		
+		<h4><strong>How to work with contact form?</strong></h4>
+		<p>This template contains fully working contact form. All you need is replace you actual e-mail address. Open the <strong>send-email.php</strong> file that is located in the root with any text editor and replace all instances of "<strong>your-email@yourdomain.com</strong>" with your email address in the entire file using the <strong>Find and Replace</strong> tool (usually the Ctrl+H hot key).</p>
+		
+		<hr>
+		
+		<h3 id="credits"><strong>G) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<ul>
+			<li><a href="http://getbootstrap.com">Twitter Bootstrap</a></li>
+			<li><a href="http://fortawesome.github.com/Font-Awesome/">FontAwesome</a></li>
+			<li><a href="http://mynameismatthieu.com/WOW/">WOW JS</a></li>
+			<li><a href="http://daneden.github.io/animate.css/">Animate.css</a></li>
+			<li><a href="http://isotope.metafizzy.co/">Isotope Plugin</a></li>
+			<li><a href="http://nicinabox.com/superslides/">Superslides Plugin</a></li>
+			<li><a href="http://anthonyterrien.com/knob/">jQuery Knob</a></li>
+			<li><a href="http://jqueryvalidation.org/">jQuery Validate</a></li>
+		</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. I'd be glad to help you if you have any questions or need any assitance regarding this theme. Or if you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>HepapatitiS</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+	
+	
+	<script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script> 
+	<script type="text/javascript">
+    SyntaxHighlighter.all()
+	</script>
+</body>
+</html>

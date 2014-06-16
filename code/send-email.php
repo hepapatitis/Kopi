@@ -1,6 +1,6 @@
 <?php
 	// Email Configuration
-	$emailAddress = 'your-email@yourdomain.com'; // Separate by comma for more email addresses (e.g.: 'email1@domain.com, email2@domain.com')
+	$emailAddress = 'your-email@your-domain.com'; // Separate by comma for more email addresses (e.g.: 'email1@domain.com, email2@domain.com')
 	$cc_emailAddress = '';
 	$bcc_emailAddress = '';
 	
@@ -11,12 +11,12 @@
 	
 	$name =  trim($_POST['name']);
 	$email =  trim($_POST['email']);
-	$message =  nl2br(str_replace("\'","'",htmlspecialchars($_POST['comments'])));
+	$message =  nl2br(htmlspecialchars($_POST['message']));
 	// Variables end
 	
-	if($emailAddress != "" && $name != "" && $email != "" && $phone != "" && $message != "")
+	if($emailAddress != "" && $name != "" && $email != "" && $message != "")
 	{
-		$subject = "[Wood Rot Doctor] Message From: $name";	
+		$subject = "[KOOPI] Message From: $name";	
 		$message = "<strong>From:</strong> $name <br/><strong>Email:</strong> $email <br/><br/> <strong>Message:</strong><br />$message";
 		
 		$headers .= 'From: '. $name . '<' . $email . '>' . "\r\n";

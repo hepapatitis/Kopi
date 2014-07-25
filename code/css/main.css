@@ -1227,6 +1227,10 @@ section {
 .box-white {
   padding: 40px 20px;
 }
+
+#pricing span.featured {
+  margin-top:0;
+}
 	
 }
 

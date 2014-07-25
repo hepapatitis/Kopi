@@ -1,8 +1,3 @@
-/*!
- * Kopi v1.0
- * Visit our demo page: http://demo.memoriesdust.com/template/koopi/
- */
-
 
 /* ==========================================================================
    Global styles
@@ -1231,6 +1226,10 @@ section {
 
 .box-white {
   padding: 40px 20px;
+}
+
+#pricing span.featured {
+  margin-top:0;
 }
 	
 }
